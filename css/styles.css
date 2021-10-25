@@ -1,0 +1,51 @@
+svg {
+  border:1px solid gray;
+  border-radius:10px;
+  height:600px;
+  width:600px;
+  margin:5px;
+}
+#wrapper {
+  margin:auto;
+  width:1440px;
+}
+input {
+  width:50px;
+}
+#linechart {
+  width:800px;
+}
+
+html {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+body {
+  background-color: #F9EFD1;
+}
+.countrymap {
+  stroke: black;
+}
+
+h2{
+  font-size: 3rem ;
+  text-align: center;
+  color: #581916;
+} 
+h3 {
+  font-size: 2rem ;
+  text-align: center;
+  color: #499AB2;
+}
+
+div.tooltip-donut{
+  position: absolute;
+  text-align: center;
+  padding: .5rem;
+  background: #FFFFFF;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  pointer-events: none;
+  font-size: 1.5rem;
+}
