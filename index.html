@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Skills Module Assignment - CSE 423</title>
+    <link rel='stylesheet' href='css/styles.css'>
+    <script src='https://d3js.org/d3.v5.min.js'></script>
+    <script src='scripts/europe.js'></script>
+    
+    <style>
+      .highlighted{
+        stroke:cyan; 
+      }
+    </style>
+
+  </head>
+  <body>
+    <div id='wrapper'>
+      <h2>Exploring Data Techniques with HTML, JS, and CSS </h2>
+      <h3>Fabricio Guevara - CSE 423 </h3>
+      <hr style='width:100%'>
+      <h1>GDP per Capita in Europe (1960-2020)</h1>
+      &nbsp;Year:&nbsp;
+      <input id='year-input' type='number' value='2000' onchange ="drawMap()" />
+      &nbsp;
+      &nbsp;Color Scale&nbsp;
+      <select id='color-scale-select' onchange ="drawMap()">
+        <option value='interpolateRdYlGn'>interpolateRdYlGn</option>
+        <option value='interpolateViridis'>interpolateViridis</option>
+        <option value='interpolateBrBG'>interpolateBrBG</option>
+      </select>
+      <br/>
+      <svg id='map'></svg>
+      <svg id='linechart' ></svg>
+      Source: <a href='https://data.worldbank.org/indicator/NY.GDP.PCAP.CD' target='_blank'>The World Bank</a>
+      <br />
+    </div>
+  </body>
+</html>
